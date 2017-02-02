@@ -36,7 +36,7 @@ public class BookWebservice {
 @GET
     @Path("/")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Book> getAllAuthors() {
+    public List<Book> getAllBooks() {
          List<Book> contactList = null;
         bookDAO = new BookDAOImpl();
         bService = new BookServiceImpl(bookDAO);
@@ -53,7 +53,7 @@ public class BookWebservice {
     @Path("/")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Book createAuthor(Book book) {
+    public Book createBook(Book book) {
 
         bookDAO = new BookDAOImpl();
          bService = new BookServiceImpl( bookDAO);
@@ -76,6 +76,10 @@ public class BookWebservice {
         return result;
     }
     
+    
+    public float getTotalPrice(){
+       return  bService.totalPriceAll();
+    }
     
 
 
