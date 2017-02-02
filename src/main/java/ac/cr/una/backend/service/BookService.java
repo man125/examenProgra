@@ -12,7 +12,7 @@ public interface BookService {
 
     
     public List<Book> findAll();
-    public Book save(Book autor);
+    public Book save(Book book);
     public boolean deleteAll();
     public float totalPriceAll();
 }

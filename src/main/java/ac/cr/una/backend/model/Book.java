@@ -31,7 +31,7 @@ public class Book {
     private Author author;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name = "type", nullable = false)
+    @JoinColumn(name = "tipo", nullable = false)
     private Booktype booktype;
 
     
