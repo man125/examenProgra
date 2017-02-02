@@ -11,6 +11,7 @@
     <property name="show_sql">true</property>
     <mapping class="ac.cr.una.backend.model.Author"/>
     <mapping class="ac.cr.una.backend.model.AuthorContact"/>
+    <mapping class="ac.cr.una.backend.model.Booktype"/>
     
   </session-factory>
 </hibernate-configuration>
