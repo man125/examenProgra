@@ -6,7 +6,7 @@ import ac.cr.una.backend.model.AuthorContact;
 import java.util.List;
 
 /**
- *
+ *fvssvsf
  * @author mguzmana
  */
 public interface AuthorContactDAO {
